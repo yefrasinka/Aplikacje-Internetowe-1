@@ -1,0 +1,109 @@
+/* Global styles */
+body {
+    background: url('morty-background.png') no-repeat center center fixed;
+    background-size: cover;
+    font-family: 'Arial', sans-serif;
+    color: #000000;
+    margin: 0;
+    padding: 0;
+}
+
+header, footer {
+    background-color: rgba(247, 250, 67, 0.8);
+    text-align: left;
+    padding: 15px;
+    font-size: 1.3em;
+    border-bottom: 3px solid darkgoldenrod;
+}
+
+main {
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.35); /* Полупрозрачный светлый фон */
+    border-radius: 15px; /* Скругленные углы */
+}
+
+h1 {
+    font-size: 2.5em;
+    text-shadow: 2px 2px 4px #fff;
+}
+
+h2, h3 {
+    text-align: left;
+    font-size: 2em;
+    text-shadow: 1px 1px 3px #fff;
+}
+
+p {
+    font-size: 1.5em;
+    line-height: 1.8em;
+    text-align: left;
+    text-shadow: 1px 1px 3px #fff;
+}
+
+ul {
+    padding-left: 0;
+    list-style-type: none;
+}
+
+ul li {
+    margin-bottom: 15px;
+    font-size: 1.6em;
+    padding: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    text-shadow: 1px 1px 3px #fff;
+    background-color: rgba(255, 255, 255, 0.4); /* Светлый фон для элементов списка */
+    border-radius: 10px;
+}
+
+ul li:nth-child(odd) {
+    flex-direction: row;
+}
+
+ul li:nth-child(even) {
+    flex-direction: row-reverse;
+}
+
+ul li strong {
+    font-weight: bold;
+    color: darkgoldenrod;
+}
+
+img {
+    border: 3px solid rgba(255, 223, 0, 0.8);
+    border-radius: 10px;
+    width: 200px;
+    height: 200px;
+    margin: 0 15px;
+}
+
+ul li img {
+    vertical-align: middle;
+}
+
+@media screen and (max-width: 1440px) {
+    body {
+        font-size: 18px;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    body {
+        font-size: 16px;
+    }
+    
+    img {
+        width: 120px;
+        height: 120px;
+    }
+    
+    header, footer {
+        font-size: 1.2em;
+        padding: 10px;
+    }
+    
+    ul li {
+        font-size: 1.4em;
+    }
+}
