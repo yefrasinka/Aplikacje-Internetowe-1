@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>To-Do List</title>
+  <link rel="stylesheet" href="todo.css">
+</head>
+<body>
+  <div class="container">
+    <h1>To-Do List</h1>
+    <input type="text" id="search" placeholder="Search tasks..." oninput="todo.updateSearchTerm(this.value)">
+    
+    <div id="task-list" class="task-list">
+    </div>
+    
+    <div class="task-input">
+      <input type="text" id="task-input" placeholder="New task..." maxlength="255">
+      <input type="date" id="task-deadline" placeholder="Due date">
+      <button class="add-button" onclick="todo.addTask()">Add Task</button>
+    </div>
+  </div>
+  
+  <script src="todo.js"></script> 
+</body>
+</html>
