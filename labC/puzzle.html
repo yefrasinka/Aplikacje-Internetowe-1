@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Map Puzzle</title>
+  <link rel="stylesheet" href="puzzle.css">
+  <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+</head>
+<body>
+  <h1>Map Puzzle</h1>
+
+  <div id="container">
+    <div id="mapContainer">
+      <h2>Map</h2>
+      <div id="map"></div>
+      <button id="showLocationBtn">Show My Location</button>
+      <button id="downloadMapBtn">Download Map</button>
+    </div>
+
+    <div id="rasterMapContainer">
+      <h2>Raster Map</h2>
+      <div id="rasterMap"></div>
+    </div>
+
+    <div id="shuffledPuzzleContainer">
+      <h2>Shuffled Puzzle</h2>
+      <div id="shuffledPuzzle"></div>
+    </div>
+
+    <div id="puzzleTargetContainer">
+      <h2>Puzzle Assembly Area</h2>
+      <div id="puzzleTarget"></div>
+      <button id="checkPuzzleBtn">Check Puzzle</button>
+    </div>
+  </div>
+
+  <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+  <script src="https://unpkg.com/leaflet-image/leaflet-image.js"></script>
+  <script src="puzzle.js"></script>
+</body>
+</html>
